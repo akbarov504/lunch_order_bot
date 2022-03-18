@@ -1,0 +1,24 @@
+package uz.jl.lunchorderbot.enums.state;
+
+import lombok.Getter;
+
+@Getter
+public enum StateEnum {
+    ANONYMOUS,
+    CHOOSE_MAIN_MENU,
+    LOGIN,
+    LOGIN_USERNAME,
+    LOGIN_PASSWORD,
+    REGISTER,
+    REGISTER_USERNAME,
+    REGISTER_PASSWORD,
+    REGISTER_FULL_NAME,
+    REGISTER_PHONE,
+    REGISTER_LANGUAGE,
+    REGISTER_POSITION,
+    REGISTER_DEPARTMENT,
+    AUTH_HOME,
+    ORDERING,
+    COMPLAINT_LIST,
+    COMPLAINT_WRITE;
+}

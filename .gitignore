@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+/src/test/java/uz/jl/lunchorderbot/LunchOrderBotApplicationTests.java
+/.mvn/wrapper/maven-wrapper.jar
+/.mvn/wrapper/maven-wrapper.properties
+/.jpb/persistence-units.xml

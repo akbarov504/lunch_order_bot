@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="base.html :: head('Menu Create Page')"></head>
+<body>
+<section th:include="base.html :: navbar"></section>
+
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <form th:action="@{/admin/menu/create/}" method="post">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control" id="date" placeholder="Date" name="date">
+                    </div>
+
+                    <div class="form-check" th:each="meal: ${meals}">
+                        <label for="meals" th:text="${meal.name}"></label>
+                        <input class="form-check-input position-static ml-3" type="checkbox" id="meals"
+                               th:value="${meal.id}" name="meals">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section th:include="base.html :: js"></section>
+</body>
+</html>
